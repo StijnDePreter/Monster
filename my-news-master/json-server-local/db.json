@@ -1,0 +1,80 @@
+{
+  "users": [
+    {
+      "email": "admin@mail.com",
+      "password": "$2a$10$NcqZhDfM.h/Knlasn5djT.e514sqotWmUsBYdq/AfoQGZtRTfiY72",
+      "id": 1
+    },
+    {
+      "email": "user@mail.com",
+      "password": "$2a$10$MqIlXrjlyjE8A1TmZ9Nhqe6RCO8tStIX.u69DYmg5.WjHab3oQHY6",
+      "id": 2
+    }
+  ],
+  "articles": [
+    {
+      "id": 3,
+      "title": "dqzdd",
+      "subtitle": "qdqz",
+      "imageUrl": "https://firebasestorage.googleapis.com/v0/b/thomasmorenews-cf80b.appspot.com/o/articles%2Fj52myiggqy?alt=media&token=2c33e9ff-9aef-4558-92a4-55c8544cab58",
+      "imageCaption": "Test",
+      "content": "Test content",
+      "authorId": 1,
+      "author": "admin@mail.com",
+      "categoryId": 5,
+      "statusId": 3
+    }
+  ],
+  "categories": [
+    {
+      "id": 1,
+      "name": "sports",
+      "userId": 1
+    },
+    {
+      "id": 2,
+      "name": "economy",
+      "userId": 1
+    },
+    {
+      "id": 3,
+      "name": "politics",
+      "userId": 1
+    },
+    {
+      "id": 4,
+      "name": "weather",
+      "userId": 1
+    },
+    {
+      "id": 5,
+      "name": "animals"
+    }
+  ],
+  "statuses": [
+    {
+      "name": "draft",
+      "active": true,
+      "id": 1,
+      "userId": 1
+    },
+    {
+      "name": "To review",
+      "active": true,
+      "id": 2,
+      "userId": 1
+    },
+    {
+      "id": 3,
+      "name": "published",
+      "active": true,
+      "userId": 1
+    },
+    {
+      "name": "Concept",
+      "active": true,
+      "id": 4,
+      "userId": 1
+    }
+  ]
+}

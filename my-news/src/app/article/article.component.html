@@ -1,0 +1,24 @@
+<!-- <article *ngIf="article.editor != ''"> -->
+    
+<article>
+    <h1>{{article.title}}</h1>
+    <h4>{{article.subtitle}}</h4>
+    <figure>
+        <img src="{{article.imageUrl}}"
+            alt="{{article.imageCaption}}">
+        <figcaption>{{article.imageCaption}}</figcaption>
+    </figure>
+
+    <p *ngIf="!detail">
+        {{article.content | shortenContent : 100}}
+        <button (click)="goToDetail(article.id)"> Detail</button>
+    </p>
+    <p *ngIf="detail">
+        {{article.content}}
+        <button (click)="goBack()"> Back</button>
+    </p>
+    <footer>
+        <p>Author: {{article.author}}, Published: {{article.publishDate}}</p>
+        <p>Editor: {{article.editor}}</p>
+    </footer>
+</article>

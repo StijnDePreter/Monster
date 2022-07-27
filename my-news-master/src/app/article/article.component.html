@@ -1,0 +1,20 @@
+<article *ngIf="article">
+    <h1>{{article.title}} <!-- interpolation --></h1>
+    <h4>{{article.subtitle}}</h4>
+    <figure>
+        <img src="{{article.imageUrl}}"
+            alt="{{article.imageCaption}}">
+        <figcaption>{{article.imageCaption}}</figcaption>
+    </figure>
+    <p *ngIf="!isDetail">
+        {{article.content | shortenContent : 250}}
+    </p>
+    <p *ngIf="isDetail">
+        {{article.content}}
+    </p>
+    <p *ngIf="!isDetail"><button (click)="detail(article.id)">Read more</button></p>
+    <p *ngIf="isDetail"><button (click)="back()">Back</button></p>
+    <footer>
+        <p>Author: {{article.author}}, Published: {{article.publishDate | date:'medium' }}</p>
+    </footer>
+</article>

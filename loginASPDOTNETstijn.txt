@@ -1,0 +1,31 @@
+{
+  "username": "StijnDePreter","password":"test"
+}
+
+
+{
+  "email": "stijnDePreter@live.be","password":"test"
+}
+
+
+
+Home
+
+
+
+Admin
+- Create User
+- Read User
+- Update User
+- Delete user
+
+- Crud Userroles
+
+
+LabTechnician
+OpenTests (return all tests without results)
+Enter Result (form)
+
+batch admin
+View All batches
+Add batch (form)

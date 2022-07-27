@@ -1,0 +1,7 @@
+api
+
+
+{
+  "email": "stijndepreter@live.be",
+  "password": "test"
+}
